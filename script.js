@@ -29,20 +29,26 @@ $(function () {
     } 
   }
   $(".saveBtn").click(function(){
-    $(this).parent();
+    var key = $(this).parent();
     var container = $(this).parent();
-    var containerId = container.attr("id");
+    var containerId = container.attr("hour-");
+    // console.log(key.attr("id"));
+    // console.log(key[0].id)
     // alert("id");
-    
-    var savedText = document.querySelector(".text-center").value;
+    // console.log(key.children()[1].value)
+    var savedText = key.children()[1].value
+    //went through DOM traveral with my tutor in line 36
     container.textContent = savedText; 
-    localStorage.setItem("text",savedText);
-
+    localStorage.setItem(key[0].id,savedText);
+   
+   if (localStorage.getItem(key[0].id)) {
+    
+   }
+    //the key will save the information based on the hour
+    //I had "text-area" as the class in the query selector but my tutor informed me that that is not where people are putting the text so I need to put a class thats within the text area element. 
     // console.log()
     // container.find(".text-center");
-
     
-
     // var savedText = JSON.parse(localStorage.getItem("description"));
     // if (savedText) {
     //   descriptionSavedText = savedText;
