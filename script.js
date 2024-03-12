@@ -1,7 +1,7 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
-$(function () {
+$(document).ready(function () {
   // var advancedFormat = require('dayjs/plugin/advancedFormat')
   // dayjs.extend(advancedFormat) 
   const currentDate = dayjs();
@@ -27,7 +27,16 @@ $(function () {
       $(idDiv).addClass("future")
       // alert("future")
     } 
-  }
+  } 
+  for (var i=9; i<18; i++) {
+    var currentkey = "hour-" + i 
+    if (JSON.parse(localStorage.getItem(currentkey))) {
+      // var timeblock = $("#currentkey")
+      $("#hour-9 .description").val(localStorage.getItem("hour-9"))
+      // timeblock.children(":eq(1)").text(JSON.parse(localStorage.getItem(currentkey)))
+      // console.log(timeblock)
+    }
+  } 
   $(".saveBtn").click(function(){
     var key = $(this).parent();
     var container = $(this).parent();
@@ -39,11 +48,11 @@ $(function () {
     var savedText = key.children()[1].value
     //went through DOM traveral with my tutor in line 36
     container.textContent = savedText; 
-    localStorage.setItem(key[0].id,savedText);
+    localStorage.setItem(key[0].id,JSON.stringify(savedText));
    
-   if (localStorage.getItem(key[0].id)) {
-    
-   }
+  //  if (localStorage.getItem(key[0].id)) {
+
+  //  }
     //the key will save the information based on the hour
     //I had "text-area" as the class in the query selector but my tutor informed me that that is not where people are putting the text so I need to put a class thats within the text area element. 
     // console.log()
