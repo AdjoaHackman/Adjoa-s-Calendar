@@ -11,7 +11,7 @@ I had to do a bit of research on how to format the date for Dayjs (and also real
 
 I knew I had to write a for loop for the color coding/hour blocks so I had help from my mentor to write the for loop. I'm used to writing for loops where the i = 0 so it was difficult to comprehend it being 9 this time. I removed the past, present, and future classes from the HTML and then added the classes to the for loop based on the id ("hour-). The alert function was very helpful in testing if this worked! 
 
-Finally, I had to figure out local storage and how to save the user text after refresh. As I commented in the code, I had to work with my TA on the code. We tried to put it in a for loop but I got confused after looking up how to do it. I understand the difference between setItem and getItem and I knew to use localstorage.getItem so that the saved text showed up after refresh but had so much trouble with HOW to use it. After discussing a few different ways to save the user text after refresh, we decided on the code that starts on line 32. I am sure there is a better way to do this, in terms of writing less code, but this is the only one that made sense for now - getting the user text by the key, which in this case, is the hour. Here is my final daily planner:  
+Finally, I had to figure out local storage and how to save the user text after refresh. As I commented in the code, I had to work with my TA on the code. We tried to put it in a for loop but I got confused after looking up how to do it. I understand the difference between setItem and getItem and I knew to use localstorage.getItem so that the saved text showed up after refresh but had so much trouble with HOW to use it. After discussing a few different ways to save the user text after refresh, we decided on the code that starts on line 32. I am sure there is a better way to do this, in terms of writing less code, but this is the only one that made sense for now - getting the user text by the key, which in this case, is the hour. Here is my final daily planner <a href=">  
 
 <img src="./Assets/Screenshot 2024-03-12 at 12.47.18 PM.png" alt = "screenshot of my finished assignment">
 
@@ -24,6 +24,8 @@ I had a very hard time with local storage during this assignment. I went to tuto
 
 ## Credits
 I never thought I would have this much support during this journey. I am so thankful for my mentors, TA and instructor for their help. I honestly don't know where I would be without them.
+
+[Link to Video](./Assets/WorkDay_Scheduler_Screen%20Recording.mov)
 
 <video src="./Assets/WorkDay_Scheduler_Screen Recording.mov" alt = "screen recording of my homework">
 
