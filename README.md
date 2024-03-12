@@ -15,7 +15,7 @@ Finally, I had to figure out local storage and how to save the user text after r
 
 <img src="./Assets/Screenshot 2024-03-12 at 12.47.18 PM.png" alt = "screenshot of my finished assignment"/>
 
-<video src="./Assets/WorkDay_Scheduler_Screen Recording.mov" alt = "screen recording of my homework">
+<video src="./Assets/WorkDay_Scheduler_Screen Recording.mov" alt = "screen recording of my homework"/>
 
 ## What Have I Learned?
 I am learning that it is okay to not know something. It is still a work in progress. I am still struggling with syntax and how to write the code but I am coming to terms with the fact that this is normal and many others still have this issue. I am at least able to pseudocode what I would like to code. I'm glad JQuery is no longer widely used. 
