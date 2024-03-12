@@ -1,6 +1,4 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
+// Wrap all code that interacts with the DOM in a call to jQuery to ensure that the code isn't run until the browser has finished rendering all the elements // in the html.
 $(document).ready(function () {
   // var advancedFormat = require('dayjs/plugin/advancedFormat')
   // dayjs.extend(advancedFormat) 
@@ -15,7 +13,9 @@ $(document).ready(function () {
   //   $("#hour-9").addClass("future");
 
   // } 
+  
   for (var i=9; i<18; i++) {
+    // console.log(currentTime)
     var idDiv = "#hour-"+i
     if (i == currentTime) {
       $(idDiv).addClass("present");
@@ -28,15 +28,24 @@ $(document).ready(function () {
       // alert("future")
     } 
   } 
-  for (var i=9; i<18; i++) {
-    var currentkey = "hour-" + i 
-    if (JSON.parse(localStorage.getItem(currentkey))) {
+  //I had to work with my TA on the code below because I was having trouble with local storage and saving whatever is written in the text area. As you can see we tried to put it in a for loop but I got confused after looking up how to do it. I knew to use localstorage.getItem but had so much trouble with HOW to use it.
+  $('#hour-9').children().eq(1).val(localStorage.getItem('hour-9'));
+  $('#hour-10').children().eq(1).val(localStorage.getItem('hour-10'));
+  $('#hour-11').children().eq(1).val(localStorage.getItem('hour-11'));
+  $('#hour-12').children().eq(1).val(localStorage.getItem('hour-12'));
+  $('#hour-13').children().eq(1).val(localStorage.getItem('hour-13'));
+  $('#hour-14').children().eq(1).val(localStorage.getItem('hour-14'));
+  $('#hour-15').children().eq(1).val(localStorage.getItem('hour-15'));
+  $('#hour-16').children().eq(1).val(localStorage.getItem('hour-16'));
+  $('#hour-17').children().eq(1).val(localStorage.getItem('hour-17'));
+
+  // for (var i=9; i<18; i++) {
+  //   var currentkey = "hour-" + i 
+    // if (JSON.parse(localStorage.getItem(currentkey))) {
       // var timeblock = $("#currentkey")
-      $("#hour-9 .description").val(localStorage.getItem("hour-9"))
+      // $("#hour-9 .description").val(localStorage.getItem("hour-9"))
       // timeblock.children(":eq(1)").text(JSON.parse(localStorage.getItem(currentkey)))
       // console.log(timeblock)
-    }
-  } 
   $(".saveBtn").click(function(){
     var key = $(this).parent();
     var container = $(this).parent();
@@ -48,10 +57,10 @@ $(document).ready(function () {
     var savedText = key.children()[1].value
     //went through DOM traveral with my tutor in line 36
     container.textContent = savedText; 
-    localStorage.setItem(key[0].id,JSON.stringify(savedText));
+    localStorage.setItem(key[0].id,savedText);
    
   //  if (localStorage.getItem(key[0].id)) {
-
+  //I tried the using localstorage.getItem here which is why I made the comment in line 67, also for line 62.
   //  }
     //the key will save the information based on the hour
     //I had "text-area" as the class in the query selector but my tutor informed me that that is not where people are putting the text so I need to put a class thats within the text area element. 
@@ -82,10 +91,10 @@ $(document).ready(function () {
 //     }
 // })
 //"this" is in reference to the element that the function is attached to - which in this, is the save button. 
-// function? How can DOM traversal be used to get the "hour-x" id of the time-block containing the button that was clicked?
+// How can DOM traversal be used to get the "hour-x" id of the time-block containing the button that was clicked?
   //get the parent of the button and we will have the element that has the ID
 //How might the id be useful when saving the description in local storage?
-  //when I click the button, figure out what hour its for, then once we have the hour, store the event name that I defined for the hour}
+  //when I click the button, figure out what hour its for, then once we have the hour, store the event name that I defined for the hour
 
   //depending on the hour, we need the class of present, future or past
 //only need the hour for the daily planner
