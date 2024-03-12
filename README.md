@@ -13,7 +13,7 @@ I knew I had to write a for loop for the color coding/hour blocks so I had help 
 
 Finally, I had to figure out local storage and how to save the user text after refresh. As I commented in the code, I had to work with my TA on the code. We tried to put it in a for loop but I got confused after looking up how to do it. I understand the difference between setItem and getItem and I knew to use localstorage.getItem so that the saved text showed up after refresh but had so much trouble with HOW to use it. After discussing a few different ways to save the user text after refresh, we decided on the code that starts on line 32. I am sure there is a better way to do this, in terms of writing less code, but this is the only one that made sense for now - getting the user text by the key, which in this case, is the hour. 
 
-<img src="./Assets/Screenshot 2024-03-12 at 12.47.18 PM.png" alt = "screenshot of my finished assignment"/>
+<img src="./Assets/Screenshot 2024-03-12 at 12.47.18 PM.png" alt = "screenshot of my finished assignment">
 
 <video src="./Assets/WorkDay_Scheduler_Screen Recording.mov" alt = "screen recording of my homework"/>
 
@@ -22,9 +22,9 @@ I am learning that it is okay to not know something. It is still a work in progr
 
 One fun detail I learned (also commented in the code) is that we can have multiple classes in the HTML code by putting a space in between the class names. I didn't know we could have more than one class within an element. I also see how often my instructors/TA's/mentors console log everything for testing. I learned how useful the console log is vs just seeing if the code worked (if that makes sense?). 
 
-I had a very hard time with local storage during this assignment. I went to tutoring and asked my TA for help because I could not get it. I went to various sites like MDN Web Docs, JavaScript.info, and this site https://blog.logrocket.com/localstorage-javascript-complete-guide/ but I was told the key I used for the local storage was undefined. I tried multiple times (as you can see in the code) to get the (key, value) defined and for it to show up in the local storage in my inspector. I also have trouble understanding when to use JSON stringify. This is something I will have to practice multiple times - it's not as clear for me. I am always asking why because it doesn't make the most sense. 
+I had a very hard time with local storage during this assignment. I went to tutoring and asked my TA for help because I could not get it. I went to various sites like MDN Web Docs, JavaScript.info, and <a href="https://blog.logrocket.com/localstorage-javascript-complete-guide/" target="_blank" alt = "javascript guide">this site</a> but I was told the key I used for the local storage was undefined. I tried multiple times (as you can see in the code) to get the (key, value) defined and for it to show up in the local storage in my inspector. I also have trouble understanding when to use JSON stringify. This is something I will have to practice multiple times - it's not as clear for me. I am always asking why because it doesn't make the most sense. 
 
 ## Credits
-I never thought I would have this much support during this journey. 
+I never thought I would have this much support during this journey. I am so thankful for my mentors, TA and instructor for their help. I honestly don't know where I would be without them.
 
 
