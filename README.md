@@ -25,7 +25,4 @@ I had a very hard time with local storage during this assignment. I went to tuto
 ## Credits
 I never thought I would have this much support during this journey. I am so thankful for my mentors, TA and instructor for their help. I honestly don't know where I would be without them.
 
-[Link to Video](./Assets/WorkDay_Scheduler_Screen%20Recording.mov)
-
-<video src="./Assets/WorkDay_Scheduler_Screen Recording.mov" alt = "screen recording of my homework">
 
